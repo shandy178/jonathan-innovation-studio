@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jonathan Innovation Studio — TALKLOOK Urban Escape · 社区客厅</title>
-<meta name="description" content="消费者行为与洞察课程工作室：为 TALKLOOK Urban Escape 社区门店转型提供「社区客厅」定位与消费者旅程方案。">
-<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Noto+Serif+SC:wght@500;700;900&display=swap">
+<title>Jonathan Innovation Studio — TALKLOOK Urban Escape · Community Living Room</title>
+<meta name="description" content="Consumer Behavior & Insights course studio: a Community Living Room positioning and consumer journey plan for the TALKLOOK Urban Escape community-store transition.">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap">
 <style>
 :root{
   --red:#E2231A;
@@ -22,16 +22,16 @@
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
-  font-family:"Noto Sans SC",-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
-  color:var(--text);background:var(--paper);line-height:1.75;
+  font-family:"Inter",-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+  color:var(--text);background:var(--paper);line-height:1.7;
   -webkit-font-smoothing:antialiased;
 }
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
-h1,h2,h3{font-family:"Noto Serif SC","Noto Sans SC",serif;font-weight:700;letter-spacing:.02em}
+h1,h2,h3{font-family:"Playfair Display","Inter",serif;font-weight:700;letter-spacing:.01em}
 
-/* ===== 导航 ===== */
+/* ===== Nav ===== */
 nav{
   position:fixed;top:0;left:0;right:0;z-index:100;
   background:rgba(251,247,242,.92);backdrop-filter:blur(10px);
@@ -39,10 +39,10 @@ nav{
 }
 .nav-inner{max-width:var(--maxw);margin:0 auto;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px}
 .brand{display:flex;align-items:center;gap:12px;font-weight:700}
-.brand-mark{width:34px;height:34px;background:var(--red);border-radius:8px;display:grid;place-items:center;color:#fff;font-family:"Noto Serif SC",serif;font-weight:900;font-size:18px;line-height:1}
-.brand-name{font-size:15px;letter-spacing:.04em}
-.brand-name small{display:block;font-size:11px;color:var(--muted);font-weight:400;letter-spacing:.12em}
-.nav-links{display:flex;gap:26px;font-size:14px}
+.brand-mark{width:34px;height:34px;background:var(--red);border-radius:8px;display:grid;place-items:center;color:#fff;font-family:"Playfair Display",serif;font-weight:800;font-size:18px;line-height:1}
+.brand-name{font-size:15px;letter-spacing:.02em}
+.brand-name small{display:block;font-size:11px;color:var(--muted);font-weight:400;letter-spacing:.1em}
+.nav-links{display:flex;gap:24px;font-size:14px}
 .nav-links a{color:var(--text);position:relative}
 .nav-links a:hover{color:var(--red)}
 .nav-toggle{display:none;background:none;border:none;font-size:22px;cursor:pointer;color:var(--ink)}
@@ -53,11 +53,11 @@ header.hero{position:relative;min-height:92vh;display:flex;align-items:center;co
 .hero-bg img{width:100%;height:100%;object-fit:cover}
 .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(20,15,12,.78) 0%,rgba(20,15,12,.45) 55%,rgba(20,15,12,.15) 100%)}
 .hero-inner{position:relative;z-index:1;width:100%;padding-top:90px}
-.hero-tag{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:7px 16px;font-size:13px;letter-spacing:.18em;margin-bottom:28px}
+.hero-tag{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:7px 16px;font-size:13px;letter-spacing:.16em;margin-bottom:28px}
 .hero-tag::before{content:"";width:7px;height:7px;background:var(--red);border-radius:50%}
-.hero h1{font-size:clamp(34px,5.4vw,62px);line-height:1.25;margin-bottom:22px;max-width:760px}
+.hero h1{font-size:clamp(32px,5vw,58px);line-height:1.22;margin-bottom:22px;max-width:780px}
 .hero h1 .accent{color:#FF5A50}
-.hero p.lead{font-size:clamp(15px,1.6vw,19px);max-width:560px;color:rgba(255,255,255,.88);font-weight:300;margin-bottom:36px}
+.hero p.lead{font-size:clamp(15px,1.5vw,18px);max-width:580px;color:rgba(255,255,255,.88);font-weight:300;margin-bottom:36px}
 .hero-meta{display:flex;flex-wrap:wrap;gap:14px 34px;font-size:13px;color:rgba(255,255,255,.82)}
 .hero-meta b{display:block;font-size:15px;color:#fff;font-weight:500}
 .hero-actions{margin-top:38px;display:flex;gap:16px;flex-wrap:wrap}
@@ -67,19 +67,19 @@ header.hero{position:relative;min-height:92vh;display:flex;align-items:center;co
 .btn-ghost{border:1px solid rgba(255,255,255,.5);color:#fff}
 .btn-ghost:hover{background:rgba(255,255,255,.12)}
 
-/* ===== 通用板块 ===== */
+/* ===== Sections ===== */
 section{padding:96px 0}
-.sec-head{margin-bottom:52px;max-width:720px}
-.sec-kicker{display:inline-block;color:var(--red);font-size:13px;letter-spacing:.22em;font-weight:700;margin-bottom:14px}
-.sec-head h2{font-size:clamp(26px,3.2vw,38px);line-height:1.3;margin-bottom:16px}
+.sec-head{margin-bottom:52px;max-width:760px}
+.sec-kicker{display:inline-block;color:var(--red);font-size:13px;letter-spacing:.2em;font-weight:700;margin-bottom:14px}
+.sec-head h2{font-size:clamp(26px,3.2vw,36px);line-height:1.28;margin-bottom:16px}
 .sec-head p{color:var(--muted);font-size:16px}
 
-/* ===== 工作室介绍 ===== */
+/* ===== About ===== */
 .about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
 .about-text p{margin-bottom:18px;font-size:16px;color:var(--text)}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:34px}
 .stat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 20px}
-.stat .num{font-family:"Noto Serif SC",serif;font-size:30px;font-weight:900;color:var(--red)}
+.stat .num{font-family:"Playfair Display",serif;font-size:30px;font-weight:800;color:var(--red)}
 .stat .lbl{font-size:13px;color:var(--muted);margin-top:4px}
 .about-card{background:var(--ink);color:#fff;border-radius:22px;padding:36px 32px}
 .about-card h3{font-size:18px;margin-bottom:18px;color:#FFD9D6}
@@ -87,38 +87,36 @@ section{padding:96px 0}
 .about-card li{padding:12px 0;border-top:1px solid rgba(255,255,255,.14);font-size:14.5px;display:flex;gap:12px}
 .about-card li::before{content:"—";color:var(--red)}
 
-/* ===== 品牌背景 ===== */
+/* ===== Brand context ===== */
 .bg-section{background:var(--white)}
 .bg-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
 .bg-card{border:1px solid var(--line);border-radius:18px;padding:28px 24px;background:var(--paper)}
-.bg-card .idx{font-size:13px;color:var(--red);font-weight:700;letter-spacing:.15em}
+.bg-card .idx{font-size:13px;color:var(--red);font-weight:700;letter-spacing:.12em}
 .bg-card h3{font-size:17px;margin:12px 0 10px}
 .bg-card p{font-size:14px;color:var(--muted)}
 .brand-strip{margin-top:40px;background:var(--red);color:#fff;border-radius:22px;padding:36px 38px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .brand-strip .item b{display:block;font-size:16px;margin-bottom:6px}
 .brand-strip .item span{font-size:13.5px;opacity:.88}
 
-/* ===== 概念主张 ===== */
+/* ===== Concept ===== */
 .concept{background:var(--ink);color:#fff}
 .concept .sec-head p{color:rgba(255,255,255,.7)}
 .concept-core{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-bottom:56px}
 .concept-core h2{color:#fff}
-.concept-quote{font-family:"Noto Serif SC",serif;font-size:clamp(22px,2.6vw,30px);line-height:1.6;margin:22px 0}
+.concept-quote{font-family:"Playfair Display",serif;font-size:clamp(22px,2.5vw,29px);line-height:1.55;margin:22px 0}
 .concept-quote em{color:#FF5A50;font-style:normal}
 .concept-tags{display:flex;flex-wrap:wrap;gap:10px}
 .concept-tags span{border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:8px 16px;font-size:13px}
 .scene-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .scene{border-radius:20px;overflow:hidden;background:#26221F;border:1px solid rgba(255,255,255,.1)}
-.scene img{width:100%;height:230px;object-fit:cover}
 .scene-visual{width:100%;height:230px;position:relative;overflow:hidden}
 .scene-main .scene-visual{height:300px}
 .scene-body{padding:22px}
 .scene-body h3{font-size:17px;margin-bottom:8px}
 .scene-body p{font-size:14px;color:rgba(255,255,255,.72)}
 .scene .scene-main{grid-column:span 2}
-.scene-main img{height:300px}
 
-/* CSS 场景画（无位图兜底） */
+/* CSS scene artwork */
 .win{position:absolute;inset:0;background:linear-gradient(160deg,#3A2E26 0%,#241D18 100%)}
 .win::before{content:"";position:absolute;left:8%;top:12%;width:44%;height:64%;background:linear-gradient(180deg,#E9D9C4 0%,#C9A986 100%);border:10px solid #1B1B1B;border-radius:14px;box-shadow:0 18px 40px rgba(0,0,0,.45)}
 .win::after{content:"";position:absolute;right:10%;bottom:14%;width:26%;height:30%;background:#2E241D;border-radius:12px}
@@ -137,18 +135,17 @@ section{padding:96px 0}
 .meet-person{position:absolute;width:30px;height:50px;background:#8A6A52;border-radius:14px 14px 6px 6px}
 .mp1{left:20%;bottom:34%}.mp2{right:22%;bottom:34%;background:#6E4A34}
 
-/* ===== 消费者旅程五步 ===== */
-.journey{position:relative}
+/* ===== Journey ===== */
 .journey-track{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:20px}
 .step{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px 22px;position:relative;transition:.2s}
 .step:hover{border-color:var(--red);transform:translateY(-4px)}
-.step .no{width:42px;height:42px;border-radius:12px;background:var(--paper-2);color:var(--red);display:grid;place-items:center;font-family:"Noto Serif SC",serif;font-weight:900;font-size:19px;margin-bottom:18px}
+.step .no{width:42px;height:42px;border-radius:12px;background:var(--paper-2);color:var(--red);display:grid;place-items:center;font-family:"Playfair Display",serif;font-weight:800;font-size:19px;margin-bottom:18px}
 .step h3{font-size:17px;margin-bottom:8px}
-.step .theme{font-size:12px;color:var(--red);letter-spacing:.08em;margin-bottom:10px}
+.step .theme{font-size:12px;color:var(--red);letter-spacing:.06em;margin-bottom:10px}
 .step p{font-size:13.5px;color:var(--muted)}
 .journey-note{margin-top:34px;padding:24px 28px;background:var(--paper-2);border-left:4px solid var(--red);border-radius:0 14px 14px 0;font-size:15px}
 
-/* ===== 方案模块 ===== */
+/* ===== Proposal ===== */
 .solution{background:var(--white)}
 .sol-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
 .sol-card{border:1px solid var(--line);border-radius:20px;padding:34px 30px;background:var(--paper)}
@@ -159,8 +156,21 @@ section{padding:96px 0}
 .sol-card li::before{content:"";margin-top:11px;width:5px;height:5px;border-radius:50%;background:var(--red);flex:none}
 .sol-card li span{color:var(--muted);font-size:13px}
 
-/* ===== 研究框架 ===== */
-.framework{background:var(--paper-2)}
+/* ===== Rubric ===== */
+.rubric{background:var(--paper-2)}
+.rubric-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.rb-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:32px 30px;display:flex;flex-direction:column}
+.rb-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:10px}
+.rb-num{font-family:"Playfair Display",serif;font-weight:800;font-size:15px;color:var(--red);letter-spacing:.08em}
+.rb-weight{background:var(--paper-2);color:var(--red-deep);border-radius:999px;padding:5px 13px;font-size:12.5px;font-weight:600;white-space:nowrap}
+.rb-card h3{font-size:18px;margin-bottom:8px}
+.rb-sub{font-style:italic;color:var(--muted);font-size:14px;margin-bottom:16px}
+.rb-card ul{list-style:none;margin-top:4px}
+.rb-card li{padding:8px 0;font-size:14px;color:var(--text);border-top:1px dashed var(--line);display:flex;gap:10px}
+.rb-card li::before{content:"";margin-top:10px;width:5px;height:5px;border-radius:50%;background:var(--red);flex:none}
+.rb-full{grid-column:span 2}
+
+/* ===== Framework ===== */
 .fw-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .fw-card{background:#fff;border-radius:18px;padding:30px 26px;border:1px solid var(--line)}
 .fw-card h3{font-size:16px;color:var(--red);margin-bottom:12px}
@@ -168,13 +178,13 @@ section{padding:96px 0}
 .fw-tools{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
 .fw-tools span{background:var(--paper-2);border-radius:8px;padding:6px 12px;font-size:12.5px;color:var(--text)}
 
-/* ===== 交付与联系 ===== */
+/* ===== Deliverables ===== */
 .deliver{background:var(--ink);color:#fff}
 .deliver .sec-head p{color:rgba(255,255,255,.7)}
 .deliver-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
 .deliver-list{list-style:none}
 .deliver-list li{padding:18px 0;border-top:1px solid rgba(255,255,255,.15);display:flex;gap:18px;align-items:baseline}
-.deliver-list .n{font-family:"Noto Serif SC",serif;color:#FF5A50;font-weight:900;font-size:18px;flex:none}
+.deliver-list .n{font-family:"Playfair Display",serif;color:#FF5A50;font-weight:800;font-size:18px;flex:none}
 .deliver-list b{display:block;font-size:16px}
 .deliver-list span{font-size:13.5px;color:rgba(255,255,255,.68)}
 .contact-card{background:#fff;color:var(--text);border-radius:22px;padding:36px 32px}
@@ -185,7 +195,7 @@ section{padding:96px 0}
 footer{padding:34px 0;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 
-/* ===== 响应式 ===== */
+/* ===== Responsive ===== */
 @media (max-width:960px){
   .about-grid,.concept-core,.deliver-grid{grid-template-columns:1fr;gap:34px}
   .bg-grid,.fw-grid{grid-template-columns:repeat(2,1fr)}
@@ -193,6 +203,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
   .scene-grid{grid-template-columns:1fr}
   .scene .scene-main{grid-column:span 1}
   .brand-strip{grid-template-columns:1fr}
+  .rubric-grid{grid-template-columns:1fr}
+  .rb-full{grid-column:span 1}
   .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--paper);flex-direction:column;padding:18px 28px;border-bottom:1px solid var(--line)}
   .nav-links.open{display:flex}
   .nav-toggle{display:block}
@@ -205,299 +217,407 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 }
 </style>
 </head>
-<body>
+<body data-canvas-root>
 
-<!-- ===== 导航 ===== -->
+<!-- ===== Nav ===== -->
 <nav>
   <div class="nav-inner">
     <a class="brand" href="#top">
       <span class="brand-mark">J</span>
-      <span class="brand-name">Jonathan Innovation Studio<small>消费者行为与洞察 · 课程工作室</small></span>
+      <span class="brand-name">Jonathan Innovation Studio<small>Consumer Behavior & Insights · Course Studio</small></span>
     </a>
-    <button class="nav-toggle" id="navToggle" aria-label="菜单">☰</button>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
     <div class="nav-links" id="navLinks">
-      <a href="#about">工作室</a>
-      <a href="#background">品牌背景</a>
-      <a href="#concept">社区客厅</a>
-      <a href="#journey">消费者旅程</a>
-      <a href="#solution">方案建议</a>
-      <a href="#deliver">交付与联系</a>
+      <a href="#about">Studio</a>
+      <a href="#background">Brand</a>
+      <a href="#concept">Living Room</a>
+      <a href="#journey">Journey</a>
+      <a href="#rubric">Rubric</a>
+      <a href="#deliver">Deliverables</a>
     </div>
   </div>
 </nav>
 
 <!-- ===== Hero ===== -->
 <header class="hero" id="top">
-  <div class="hero-bg"><img src="assets/hero.jpg" alt="新中式社区咖啡空间" onerror="this.remove()"></div>
+  <div class="hero-bg"><img src="assets/hero.jpg" alt="New-Chinese-style community coffee space" onerror="this.remove()"></div>
   <div class="wrap hero-inner">
-    <span class="hero-tag">TALKLOOK ® · URBAN ESCAPE · 课题 01</span>
-    <h1>把咖啡馆搬进社区，成为邻居们的<em class="accent">「社区客厅」</em></h1>
-    <p class="lead">面向 TALKLOOK Urban Escape 社区门店转型课题，Jonathan Innovation Studio 以消费者行为洞察为方法，探索一家新中式咖啡如何在社区中同时容纳独处休憩、多人交流与小型会议，真正扎根邻里。</p>
+    <span class="hero-tag">TALKLOOK ® · URBAN ESCAPE · PROJECT 01</span>
+    <h1>Bring the coffee shop into the community: a neighbor's <em class="accent">“Community Living Room”</em></h1>
+    <p class="lead">For the TALKLOOK Urban Escape community-store transition, Jonathan Innovation Studio applies consumer behavior insights to explore how a new-Chinese-style café can host solo relaxation, group conversation, and small meetings under one roof — and truly put down roots in the neighborhood.</p>
     <div class="hero-meta">
-      <div><b>课程</b>消费者行为与洞察（AI 时代版）</div>
-      <div><b>品牌</b>TALKLOOK · 宁波高新区 → 社区门店</div>
-      <div><b>概念</b>Community Living Room · 社区客厅</div>
+      <div><b>Course</b>Consumer Behavior & Insights (AI Era Edition)</div>
+      <div><b>Brand</b>TALKLOOK · High-tech Zone, Ningbo → Community Store</div>
+      <div><b>Concept</b>Community Living Room</div>
     </div>
     <div class="hero-actions">
-      <a class="btn btn-primary" href="#concept">查看概念主张</a>
-      <a class="btn btn-ghost" href="#journey">浏览研究框架</a>
+      <a class="btn btn-primary" href="#concept">View the Concept</a>
+      <a class="btn btn-ghost" href="#journey">Browse the Journey</a>
     </div>
   </div>
 </header>
 
-<!-- ===== 工作室介绍 ===== -->
+<!-- ===== About ===== -->
 <section id="about">
   <div class="wrap">
     <div class="about-grid">
       <div class="about-text">
         <span class="sec-kicker">OUR STUDIO</span>
-        <h2 style="font-size:clamp(26px,3vw,34px);margin-bottom:18px">Jonathan Innovation Studio</h2>
-        <p>本工作室由课程学生组建，以 Human × AI 协作方式完成本次产学研项目：围绕 TALKLOOK 真实经营现场，从需求识别、信息搜索、品牌感知到购后留存，系统拆解社区居民的消费行为，输出可落地的门店定位与体验方案。</p>
-        <p>我们相信，社区咖啡的核心竞争力不只是一杯饮品，而是一个让人愿意反复回来的「地方」——既能独处，也能相聚。</p>
+        <h2 style="font-size:clamp(26px,3vw,32px);margin-bottom:18px">Jonathan Innovation Studio</h2>
+        <p>This studio is formed by course students and runs the project through Human × AI collaboration. Working from TALKLOOK's real operating context, we systematically decode community residents' consumer behavior — from need recognition and information search to brand perception and post-purchase retention — and produce actionable store positioning and experience proposals.</p>
+        <p>We believe the core competitive edge of a community café is not just the drink, but a place people want to return to: a place to be alone, and a place to gather.</p>
         <div class="stats">
-          <div class="stat"><div class="num">01</div><div class="lbl">选定课题 · 都市外社区转型</div></div>
-          <div class="stat"><div class="num">5</div><div class="lbl">消费者旅程研究步骤</div></div>
-          <div class="stat"><div class="num">2,500</div><div class="lbl">字咨询报告（期末交付）</div></div>
+          <div class="stat"><div class="num">01</div><div class="lbl">Selected topic · Urban Escape transition</div></div>
+          <div class="stat"><div class="num">5</div><div class="lbl">Consumer journey research steps</div></div>
+          <div class="stat"><div class="num">~3,000</div><div class="lbl">Word consultancy report (final deliverable)</div></div>
         </div>
       </div>
       <div class="about-card">
-        <h3>工作室工作方式</h3>
+        <h3>How We Work</h3>
         <ul>
-          <li>3C：好奇 · 批判 · 创造，先提问再下结论</li>
-          <li>3D：侦测 · 拆解 · 发现，还原真实消费场景</li>
-          <li>3M：绘制 · 测量 · 监测，画像与复购持续跟踪</li>
-          <li>Human × AI：多轮追问、拆解与共创，方案反复打磨</li>
-          <li>对齐课程 14 个主题，沿消费者完整旅程展开</li>
+          <li>3C: Curiosity · Critique · Creativity — ask before concluding</li>
+          <li>3D: Detect · Decompose · Discover — reconstruct real consumption scenes</li>
+          <li>3M: Map · Measure · Monitor — track personas and repeat purchase</li>
+          <li>Human × AI: repeated questioning, decomposition, and co-creation</li>
+          <li>Aligned with the course's 14 topics across the full consumer journey</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== 品牌背景 ===== -->
+<!-- ===== Brand context ===== -->
 <section class="bg-section" id="background">
   <div class="wrap">
     <div class="sec-head">
       <span class="sec-kicker">BRAND CONTEXT</span>
-      <h2>研究对象：TALKLOOK 与 Urban Escape</h2>
-      <p>TALKLOOK 始于 2019 年，宁波本地倡导「自由无拘」生活理念的复合品牌，以不同场域空间传递美好、积极的生活方式。本次聚焦其都市外线子品牌的社区门店转型命题。</p>
+      <h2>Research Subject: TALKLOOK & Urban Escape</h2>
+      <p>Founded in 2019, TALKLOOK is a Ningbo-based lifestyle composite brand advocating “freedom without restraint,” communicating a positive way of life through different spatial settings. This project focuses on the community-store transition of its Urban Escape sub-brand.</p>
     </div>
     <div class="bg-grid">
       <div class="bg-card">
-        <div class="idx">子品牌 · 01</div>
-        <h3>Urban Escape 都市外</h3>
-        <p>宁波高新区 · 约 500㎡ 新中式空间，经营创意咖啡、中式茶饮与融合膳食，主张「都市城外，自如栖息」。</p>
+        <div class="idx">SUB-BRAND · 01</div>
+        <h3>Urban Escape</h3>
+        <p>A roughly 500 m² new-Chinese-style space in Ningbo's High-tech Zone, serving creative coffee, Chinese tea, and fusion meals, with the promise “Rest freely beyond the city.”</p>
       </div>
       <div class="bg-card">
-        <div class="idx">命题 · 01</div>
-        <h3>社区门店转型</h3>
-        <p>明年将由商圈客流环境迁入社区：习惯商圈流量的新中式咖啡，如何重新定位、获客、留存并扎根社区，是尚未有标准答案的真问题。</p>
+        <div class="idx">PROJECT · 01</div>
+        <h3>Community-Store Transition</h3>
+        <p>The brand will move from a mall-traffic setting into a residential community. How should a mall-oriented new-Chinese café reposition, acquire customers, and retain them to take root locally — an open question with no standard answer.</p>
       </div>
       <div class="bg-card">
-        <div class="idx">锚定主题</div>
-        <h3>三个核心洞察维度</h3>
-        <p>市场细分与客群画像（主题 12）· 信息搜索与社区获客（主题 2）· 购后行为与复购（主题 8）。</p>
+        <div class="idx">ANCHOR TOPICS</div>
+        <h3>Three Core Insight Lenses</h3>
+        <p>Market segmentation & persona (Topic 12) · Information search & community acquisition (Topic 2) · Post-purchase behavior & repeat purchase (Topic 8).</p>
       </div>
       <div class="bg-card">
-        <div class="idx">最终交付</div>
-        <h3>定位 + 画像 + 建议</h3>
-        <p>社区门店定位方案、社区客群画像，以及产品与获客建议，供品牌方逐份评审。</p>
+        <div class="idx">FINAL OUTPUT</div>
+        <h3>Positioning + Persona + Recommendations</h3>
+        <p>A community-store positioning plan, community persona profile, and product / acquisition recommendations, reviewed item by item by the brand side.</p>
       </div>
     </div>
     <div class="brand-strip">
-      <div class="item"><b>品牌使命</b><span>做让人有幸福感的事</span></div>
-      <div class="item"><b>品牌愿景</b><span>物质质感与精神丰盈的双重富足，在快节奏城市里构建精神绿洲</span></div>
-      <div class="item"><b>品牌语言</b><span>TALK and LOOK：看好看的风景，和喜欢的人聊天，自由、自在、自如地感悟生活</span></div>
+      <div class="item"><b>Mission</b><span>Do things that make people happy</span></div>
+      <div class="item"><b>Vision</b><span>Dual abundance of material quality and spiritual fulfillment; an oasis in a fast-paced city</span></div>
+      <div class="item"><b>Brand Language</b><span>TALK and LOOK: see beautiful scenery, chat with people you like; feel life freely and at ease</span></div>
     </div>
   </div>
 </section>
 
-<!-- ===== 概念主张 ===== -->
+<!-- ===== Concept ===== -->
 <section class="concept" id="concept">
   <div class="wrap">
     <div class="concept-core">
       <div>
         <span class="sec-kicker" style="color:#FF5A50">CORE CONCEPT</span>
-        <h2>「社区客厅」<br>一间咖啡店里的三种生活状态</h2>
-        <p class="concept-quote">不只是买一杯咖啡带走，而是让社区居民走进来，像回到自家客厅一样——<em>一个人可以安静待着，一群人可以自然聊起来，小团队也能就近开一场会。</em></p>
+        <h2>“Community Living Room”<br>Three ways of life inside one café</h2>
+        <p class="concept-quote">Not just grabbing a coffee to go, but inviting residents in as if returning to their own living room — <em>someone can sit quietly alone, a group can talk naturally, and a small team can hold a meeting nearby.</em></p>
         <div class="concept-tags">
-          <span>独处休憩</span><span>邻里交流</span><span>小型会议</span><span>熟客关系</span><span>新中式空间</span><span>社区归属感</span>
+          <span>Solo Relaxation</span><span>Neighborly Talk</span><span>Small Meetings</span><span>Regular Relationships</span><span>New-Chinese Space</span><span>Community Belonging</span>
         </div>
       </div>
       <div>
-        <div class="scene-visual" aria-label="独处休憩角落">
+        <div class="scene-visual" aria-label="Solo relaxation corner">
           <div class="win"><div class="sun"></div><div class="chair"></div><div class="cup"></div></div>
         </div>
       </div>
     </div>
     <div class="scene-grid">
       <div class="scene scene-main">
-        <div class="scene-visual" aria-label="多人交流长桌">
+        <div class="scene-visual" aria-label="Group conversation table">
           <div class="win"><div class="person p1"></div><div class="person p2"></div><div class="person p3"></div><div class="person p4"></div><div class="table-long"></div></div>
         </div>
         <div class="scene-body">
-          <h3>多人交流 · 邻里相聚</h3>
-          <p>长桌与共享座位承载邻里闲谈、兴趣小组、亲子与手作活动，让咖啡空间成为社区关系发生的现场。</p>
+          <h3>Group Talk · Neighbors Together</h3>
+          <p>Long tables and shared seating carry casual chat, interest groups, parent-child and craft activities — where community relationships actually happen.</p>
         </div>
       </div>
       <div class="scene">
-        <div class="scene-visual" aria-label="小型会议角落">
+        <div class="scene-visual" aria-label="Small meeting corner">
           <div class="win"><div class="board"></div><div class="laptop"></div><div class="meet-person mp1"></div><div class="meet-person mp2"></div></div>
         </div>
         <div class="scene-body">
-          <h3>小型会议 · 灵活讨论</h3>
-          <p>可移动桌椅、白板与投屏构成半开放讨论区，满足周边自由职业者、小团队就近碰头与轻量办公需求。</p>
+          <h3>Small Meetings · Flexible Discussion</h3>
+          <p>Movable tables, whiteboard, and screen form a semi-open discussion zone for freelancers and small teams to meet and do light work nearby.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== 消费者旅程五步 ===== -->
+<!-- ===== Journey ===== -->
 <section class="journey" id="journey">
   <div class="wrap">
     <div class="sec-head">
       <span class="sec-kicker">CONSUMER JOURNEY</span>
-      <h2>沿消费者旅程拆解社区门店机会</h2>
-      <p>对照课程课题给出的研究五步，从识客到留存，逐环节识别行为特征、痛点与可介入的设计点。</p>
+      <h2>Unpacking community-store opportunities along the journey</h2>
+      <p>Following the five research steps from the course brief, we identify behavioral patterns, pain points, and designable touchpoints at each stage from recognition to retention.</p>
     </div>
     <div class="journey-track">
       <div class="step">
         <div class="no">1</div>
-        <div class="theme">主题 12 / 4</div>
-        <h3>识客 · 社区画像</h3>
-        <p>梳理周边居民结构：常住家庭、年轻上班族、自由职业者、退休长者与学生，区分各自到店动机与空间偏好。</p>
+        <div class="theme">TOPIC 12 / 4</div>
+        <h3>Recognize · Community Persona</h3>
+        <p>Map nearby residents: families, young office workers, freelancers, retirees, and students — distinguishing their motivations and space preferences.</p>
       </div>
       <div class="step">
         <div class="no">2</div>
-        <div class="theme">主题 2</div>
-        <h3>获客 · 邻里触达</h3>
-        <p>依靠邻里口碑、社群与外卖入口，结合地推、社区公告与老客带新，完成从「路过」到「进店」的首次转化。</p>
+        <div class="theme">TOPIC 2</div>
+        <h3>Acquire · Neighborhood Reach</h3>
+        <p>Rely on word of mouth, communities, and delivery entry points, plus local outreach and referrals, to convert passersby into first-time visitors.</p>
       </div>
       <div class="step">
         <div class="no">3</div>
-        <div class="theme">主题 3 / 6 / 13</div>
-        <h3>感知 · 品牌印象</h3>
-        <p>观察搬迁社区后居民对空间、出品与服务的感知，沉淀「邻里客厅」的品牌心智，而非商圈打卡店印象。</p>
+        <div class="theme">TOPIC 3 / 6 / 13</div>
+        <h3>Perceive · Brand Image</h3>
+        <p>Observe how residents perceive the space, products, and service after the move; build a “neighborhood living room” mindset rather than a mall check-in impression.</p>
       </div>
       <div class="step">
         <div class="no">4</div>
-        <div class="theme">主题 1 / 7</div>
-        <h3>产品 · 场景适配</h3>
-        <p>按独处、交流、会议三类场景调整产品结构：单人套餐、分享茶点、会议茶歇与时段化饮品搭配。</p>
+        <div class="theme">TOPIC 1 / 7</div>
+        <h3>Product · Scene Fit</h3>
+        <p>Adjust the product mix for solo, social, and meeting scenes: solo sets, sharing platters, meeting break packages, and time-based drinks.</p>
       </div>
       <div class="step">
         <div class="no">5</div>
-        <div class="theme">主题 8 / 10</div>
-        <h3>留存 · 熟客关系</h3>
-        <p>通过会员体系、社群活动与稳定服务标准建立复购，把一次到店变成长期邻里关系与高频回访。</p>
+        <div class="theme">TOPIC 8 / 10</div>
+        <h3>Retain · Regular Relationships</h3>
+        <p>Build repeat purchase through membership, community events, and consistent service, turning one visit into long-term neighborly loyalty and frequent return.</p>
       </div>
     </div>
-    <div class="journey-note">研究主线：社区客群画像 → 邻里口碑 / 外卖 / 社群 → 搬社区后的品牌感知 → 社区场景产品结构 → 邻里复购与熟客关系。</div>
+    <div class="journey-note">Research line: community persona → word of mouth / delivery / communities → post-move brand perception → scene-based product structure → neighborhood repeat purchase and regular relationships.</div>
   </div>
 </section>
 
-<!-- ===== 方案模块 ===== -->
+<!-- ===== Proposal ===== -->
 <section class="solution" id="solution">
   <div class="wrap">
     <div class="sec-head">
       <span class="sec-kicker">PROPOSAL</span>
-      <h2>「社区客厅」落地方向建议</h2>
-      <p>基于旅程拆解，工作室从空间、产品、获客与关系四个模块提出初步方向，细化结论见期末咨询报告。</p>
+      <h2>“Community Living Room” Directions to Roll Out</h2>
+      <p>Based on the journey analysis, the studio puts forward initial directions across space, product, acquisition, and relationship; detailed conclusions appear in the final consultancy report.</p>
     </div>
     <div class="sol-grid">
       <div class="sol-card">
-        <h3><span class="dot"></span>空间分区：一店三厅</h3>
+        <h3><span class="dot"></span>Space: One Store, Three Zones</h3>
         <ul>
-          <li>静区 · 独处休憩<span>靠窗单人座、吧台位，适合阅读与轻办公</span></li>
-          <li>聚区 · 交流长桌<span>可拼合长桌，承载邻里活动与小组聚会</span></li>
-          <li>议区 · 小型会议<span>半开放讨论位，配白板 / 投屏 / 预订机制</span></li>
+          <li>Quiet Zone · Solo relaxation<span>Window single seats and bar seats for reading and light work</span></li>
+          <li>Social Zone · Long table<span>Combinable tables for neighborhood events and group gatherings</span></li>
+          <li>Meeting Zone · Small huddles<span>Semi-open discussion seats with whiteboard / screen / booking</span></li>
         </ul>
       </div>
       <div class="sol-card">
-        <h3><span class="dot"></span>产品结构：按场景搭配</h3>
+        <h3><span class="dot"></span>Product: Match by Scene</h3>
         <ul>
-          <li>单人日常套餐<span>咖啡 / 茶饮 + 轻食，高频复购价位带</span></li>
-          <li>分享茶点组合<span>适合多人长桌的甜品与小食拼盘</span></li>
-          <li>会议茶歇包<span>按时段预订，适配小型团队碰头</span></li>
+          <li>Daily solo set<span>Coffee / tea + light bite, a high-frequency repeat price band</span></li>
+          <li>Sharing platter<span>Desserts and snacks suited to the long group table</span></li>
+          <li>Meeting break pack<span>Time-slotted booking for small-team huddles</span></li>
         </ul>
       </div>
       <div class="sol-card">
-        <h3><span class="dot"></span>社区获客：从邻里开始</h3>
+        <h3><span class="dot"></span>Acquisition: Start with Neighbors</h3>
         <ul>
-          <li>社群运营<span>楼栋 / 邻里群发布活动与新品，沉淀私域</span></li>
-          <li>口碑与老带新<span>熟客推荐机制，配合外卖平台覆盖周边</span></li>
-          <li>在地活动<span>手作、分享会、亲子时段，绑定社区生活节奏</span></li>
+          <li>Community operations<span>Building / neighborhood groups share events and new items, building private traffic</span></li>
+          <li>Word of mouth & referrals<span>Regular-customer referral mechanism, paired with delivery platforms nearby</span></li>
+          <li>Local events<span>Craft sessions, talks, parent-child hours tied to the community rhythm</span></li>
         </ul>
       </div>
       <div class="sol-card">
-        <h3><span class="dot"></span>留存关系：把顾客变邻居</h3>
+        <h3><span class="dot"></span>Retention: Turn Customers into Neighbors</h3>
         <ul>
-          <li>熟客识别与记忆<span>称呼偏好、常点饮品，强化被认识的感觉</span></li>
-          <li>会员与复购体系<span>积分、时段权益与季度活动权益</span></li>
-          <li>持续监测<span>到店频次、活动参与与口碑反馈，迭代空间与产品</span></li>
+          <li>Recognition & memory<span>Remember names and favorites, reinforcing the feeling of being known</span></li>
+          <li>Membership & repeat system<span>Points, time-slot benefits, and quarterly event privileges</span></li>
+          <li>Continuous monitoring<span>Track visit frequency, event participation, and feedback to iterate space and product</span></li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== 研究框架 ===== -->
+<!-- ===== Rubric ===== -->
+<section class="rubric" id="rubric">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-kicker">PROJECT RUBRIC</span>
+      <h2>Eight Graded Phases of the Final Project</h2>
+      <p>The CBI Studio final project is assessed across eight phases with the weights below. Our report maps evidence to each anchor, reviewed under the same standards by both AI grading and the Human × AI coach.</p>
+    </div>
+    <div class="rubric-grid">
+
+      <div class="rb-card">
+        <div class="rb-top"><span class="rb-num">01 · OBJECTIVE</span><span class="rb-weight">Weight 13%</span></div>
+        <h3>Brand, Problem, Opportunity</h3>
+        <p class="rb-sub">Clearly articulate the consumer behavior challenge and opportunity.</p>
+        <ul>
+          <li>Problem statement defining the core consumer issue (e.g., unclear pricing leading to cart abandonment)</li>
+          <li>Opportunity aligned with market trends (e.g., AI personalization, sustainable consumption)</li>
+          <li>Success metrics set as measurable KPIs (e.g., reduce abandonment by 20%)</li>
+          <li>Root causes drilled into 5 Whys; objective grounded in industry data / reports</li>
+        </ul>
+      </div>
+
+      <div class="rb-card">
+        <div class="rb-top"><span class="rb-num">02 · CONSUMER RESEARCH</span><span class="rb-weight">Weight 16%</span></div>
+        <h3>Behavioral Data</h3>
+        <p class="rb-sub">Deeply understand consumer behaviors, motivations, and pain points.</p>
+        <ul>
+          <li>Qualitative: interviews, focus groups, and/or ethnographic observation</li>
+          <li>Quantitative: surveys, questionnaires, and/or behavioral analytics</li>
+          <li>Secondary data: industry reports or social listening</li>
+          <li>Personas and/or journey maps synthesizing the research</li>
+        </ul>
+      </div>
+
+      <div class="rb-card">
+        <div class="rb-top"><span class="rb-num">03 · INSIGHT GENERATION</span><span class="rb-weight">Weight 15%</span></div>
+        <h3>Synthesized Findings</h3>
+        <p class="rb-sub">Translate raw data into actionable insights about consumer behavior.</p>
+        <ul>
+          <li>Patterns identified: recurring themes clustered from data</li>
+          <li>Root-cause analysis linking behaviors to underlying causes (e.g., fishbone)</li>
+          <li>Opportunity prioritization: insights ranked by impact and feasibility</li>
+          <li>Insights framed against capabilities (e.g., SWOT, affinity diagrams)</li>
+        </ul>
+      </div>
+
+      <div class="rb-card">
+        <div class="rb-top"><span class="rb-num">04 · IDEATION & SOLUTION DESIGN</span><span class="rb-weight">Weight 15%</span></div>
+        <h3>Creative Solutions</h3>
+        <p class="rb-sub">Generate creative solutions addressing the consumer behavior insights.</p>
+        <ul>
+          <li>Structured ideation (design thinking, brainwriting, SCAMPER)</li>
+          <li>Rapid prototyping: low-fidelity prototypes (wireframes, mockups, scenarios)</li>
+          <li>Consumer co-creation: target users involved in ideation</li>
+          <li>Solutions mapped to consumer jobs-to-be-done (e.g., lean canvas)</li>
+        </ul>
+      </div>
+
+      <div class="rb-card">
+        <div class="rb-top"><span class="rb-num">05 · TESTING & VALIDATION</span><span class="rb-weight">Weight 15%</span></div>
+        <h3>Validate with Consumers</h3>
+        <p class="rb-sub">Validate solutions with consumers to ensure they address behavior gaps.</p>
+        <ul>
+          <li>Usability testing / A-B testing with measured performance</li>
+          <li>Feedback loops: qualitative feedback gathered and used</li>
+          <li>Pilot testing with a small user subset measuring real-world impact</li>
+          <li>Satisfaction / impact metrics tracked (e.g., NPS before-after)</li>
+        </ul>
+      </div>
+
+      <div class="rb-card">
+        <div class="rb-top"><span class="rb-num">06 · SCALING & IMPLEMENTATION</span><span class="rb-weight">Weight 11%</span></div>
+        <h3>Full-Scale Rollout</h3>
+        <p class="rb-sub">Transition validated solutions to full-scale implementation.</p>
+        <ul>
+          <li>Phased roadmap (e.g., Month 1: MVP; Month 3: expand)</li>
+          <li>Stakeholder alignment: buy-in from cross-functional teams</li>
+          <li>Post-launch KPI monitoring and iteration plan</li>
+          <li>Project tracking and continuous improvement (OKRs / Kaizen)</li>
+        </ul>
+      </div>
+
+      <div class="rb-card">
+        <div class="rb-top"><span class="rb-num">07 · ETHICAL CONSIDERATIONS</span><span class="rb-weight">Weight 8%</span></div>
+        <h3>Protect Consumer Trust</h3>
+        <p class="rb-sub">Embed ethics into every phase to protect consumer trust.</p>
+        <ul>
+          <li>Data privacy: regulatory compliance (GDPR / CCPA), anonymization, consent</li>
+          <li>Transparency: clear communication of how consumer data is used</li>
+          <li>Inclusivity: solutions serve diverse populations (accessibility)</li>
+        </ul>
+      </div>
+
+      <div class="rb-card">
+        <div class="rb-top"><span class="rb-num">08 · REPORT STANDARDS</span><span class="rb-weight">Weight 7%</span></div>
+        <h3>Structure & Academic Standards</h3>
+        <p class="rb-sub">Professional consultancy report of ~3,000 words in APA style.</p>
+        <ul>
+          <li>Required sections present: Introduction, Problem Statement, Opportunity Identification, Innovative Solutions, Rollout Plan, Conclusion</li>
+          <li>References and appendix included; APA style</li>
+          <li>Appropriate length (~3,000 words) and professional presentation</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== Research framework ===== -->
 <section class="framework">
   <div class="wrap">
     <div class="sec-head">
       <span class="sec-kicker">METHODOLOGY</span>
-      <h2>研究框架与方法工具</h2>
-      <p>课程要求以统一研究框架拆解真实命题，工作室在报告中沿以下方法完成消费者行为解码。</p>
+      <h2>Research Framework & Toolkit</h2>
+      <p>The course requires real problems to be unpacked under one unified framework; the studio decodes consumer behavior along the methods below in the report.</p>
     </div>
     <div class="fw-grid">
       <div class="fw-card">
-        <h3>需求与动机识别</h3>
-        <p>从社区居民日常生活与出行情境出发，识别到店背后的功能需求、社交需求与情绪需求。</p>
-        <div class="fw-tools"><span>客群画像</span><span>动机分析</span><span>场景观察</span></div>
+        <h3>Need & Motivation Recognition</h3>
+        <p>Starting from residents' daily life and travel situations, identify the functional, social, and emotional needs behind each visit.</p>
+        <div class="fw-tools"><span>Persona</span><span>Motivation Analysis</span><span>Scene Observation</span></div>
       </div>
       <div class="fw-card">
-        <h3>感知与态度拆解</h3>
-        <p>分析品牌接触点如何形成社区心智，测量居民对空间、出品与服务的态度差异与改善断点。</p>
-        <div class="fw-tools"><span>品牌感知</span><span>态度量表</span><span>触点旅程图</span></div>
+        <h3>Perception & Attitude Breakdown</h3>
+        <p>Analyze how touchpoints form community mindset, measuring attitude differences and improvement breakpoints toward space, product, and service.</p>
+        <div class="fw-tools"><span>Brand Perception</span><span>Attitude Scale</span><span>Touchpoint Journey Map</span></div>
       </div>
       <div class="fw-card">
-        <h3>决策与复购跟踪</h3>
-        <p>还原信息搜索、首次到店与购后评价链条，评估复购驱动因素，提出留存与社群运营建议。</p>
-        <div class="fw-tools"><span>购后行为</span><span>复购分析</span><span>社群影响</span></div>
+        <h3>Decision & Repeat Purchase Tracking</h3>
+        <p>Reconstruct the information-search, first-visit, and post-purchase review chain; assess repeat drivers and propose retention and community recommendations.</p>
+        <div class="fw-tools"><span>Post-purchase Behavior</span><span>Repeat Analysis</span><span>Social Influence</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== 交付与联系 ===== -->
+<!-- ===== Deliverables ===== -->
 <section class="deliver" id="deliver">
   <div class="wrap deliver-grid">
     <div>
       <span class="sec-kicker" style="color:#FF5A50">DELIVERABLES</span>
-      <h2 style="color:#fff;margin-bottom:18px">期末项目交付物</h2>
+      <h2 style="color:#fff;margin-bottom:18px">Final Project Outputs</h2>
       <ul class="deliver-list">
-        <li><span class="n">01</span><div><b>社区门店定位方案</b><span>明确「社区客厅」在周边市场中的位置与差异化价值</span></div></li>
-        <li><span class="n">02</span><div><b>社区客群画像</b><span>按画像、需求、痛点三要素拆解核心与次要客群</span></div></li>
-        <li><span class="n">03</span><div><b>产品 / 获客建议</b><span>场景化产品结构、社区触达路径与留存机制建议</span></div></li>
-        <li><span class="n">04</span><div><b>约 2,500 字消费者行为解码咨询报告</b><span>Human × AI 协作完成，供品牌方逐份点评</span></div></li>
+        <li><span class="n">01</span><div><b>Community-Store Positioning Plan</b><span>Define the “Community Living Room” position and differentiated value in the local market</span></div></li>
+        <li><span class="n">02</span><div><b>Community Persona Profile</b><span>Break down core and secondary segments by persona, needs, and pain points</span></div></li>
+        <li><span class="n">03</span><div><b>Product / Acquisition Recommendations</b><span>Scene-based product mix, community reach paths, and retention mechanisms</span></div></li>
+        <li><span class="n">04</span><div><b>~3,000-Word Consumer Behavior Consultancy Report</b><span>Completed through Human × AI collaboration, reviewed item by item by the brand side</span></div></li>
       </ul>
     </div>
     <div class="contact-card">
       <h3>Jonathan Innovation Studio</h3>
-      <div class="contact-row"><span>课程</span><div>消费者行为与洞察</div></div>
-      <div class="contact-row"><span>合作品牌</span><div>TALKLOOK ® Urban Escape</div></div>
-      <div class="contact-row"><span>课题</span><div>01 · 社区门店转型</div></div>
-      <div class="contact-row"><span>阶段</span><div>Fall 2026 · 课程期末项目</div></div>
-      <div class="contact-row"><span>地点</span><div>浙江 · 宁波</div></div>
+      <div class="contact-row"><span>Course</span><div>Consumer Behavior & Insights</div></div>
+      <div class="contact-row"><span>Partner Brand</span><div>TALKLOOK ® Urban Escape</div></div>
+      <div class="contact-row"><span>Topic</span><div>01 · Community-Store Transition</div></div>
+      <div class="contact-row"><span>Term</span><div>Fall 2026 · Final Course Project</div></div>
+      <div class="contact-row"><span>Location</span><div>Ningbo, Zhejiang, China</div></div>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <div>© 2026 Jonathan Innovation Studio · 课程作业展示站点</div>
-    <div>品牌素材来源：TALKLOOK 品牌创业分享会 · 消费者行为与洞察课程</div>
+    <div>© 2026 Jonathan Innovation Studio · Course assignment showcase</div>
+    <div>Brand source: TALKLOOK brand sharing session · Consumer Behavior & Insights course</div>
   </div>
 </footer>
 
