@@ -49,7 +49,7 @@ nav{
 
 /* ===== Hero ===== */
 header.hero{position:relative;min-height:92vh;display:flex;align-items:center;color:#fff;overflow:hidden}
-.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg{position:absolute;inset:0;z-index:0;background:linear-gradient(135deg,#3A2E26 0%,#241D18 55%,#1B1B1B 100%)}
 .hero-bg img{width:100%;height:100%;object-fit:cover}
 .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(20,15,12,.78) 0%,rgba(20,15,12,.45) 55%,rgba(20,15,12,.15) 100%)}
 .hero-inner{position:relative;z-index:1;width:100%;padding-top:90px}
@@ -110,11 +110,32 @@ section{padding:96px 0}
 .scene-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .scene{border-radius:20px;overflow:hidden;background:#26221F;border:1px solid rgba(255,255,255,.1)}
 .scene img{width:100%;height:230px;object-fit:cover}
+.scene-visual{width:100%;height:230px;position:relative;overflow:hidden}
+.scene-main .scene-visual{height:300px}
 .scene-body{padding:22px}
 .scene-body h3{font-size:17px;margin-bottom:8px}
 .scene-body p{font-size:14px;color:rgba(255,255,255,.72)}
 .scene .scene-main{grid-column:span 2}
 .scene-main img{height:300px}
+
+/* CSS 场景画（无位图兜底） */
+.win{position:absolute;inset:0;background:linear-gradient(160deg,#3A2E26 0%,#241D18 100%)}
+.win::before{content:"";position:absolute;left:8%;top:12%;width:44%;height:64%;background:linear-gradient(180deg,#E9D9C4 0%,#C9A986 100%);border:10px solid #1B1B1B;border-radius:14px;box-shadow:0 18px 40px rgba(0,0,0,.45)}
+.win::after{content:"";position:absolute;right:10%;bottom:14%;width:26%;height:30%;background:#2E241D;border-radius:12px}
+.sun{position:absolute;left:18%;top:22%;width:54px;height:54px;border-radius:50%;background:rgba(255,214,160,.55)}
+.chair{position:absolute;right:16%;bottom:16%;width:70px;height:74px;background:#6E4A34;border-radius:16px 16px 8px 8px}
+.chair::before{content:"";position:absolute;left:-14px;bottom:-18px;width:98px;height:12px;background:#4A3122;border-radius:6px}
+.cup{position:absolute;left:14%;bottom:20%;width:30px;height:26px;background:#E2231A;border-radius:6px 6px 10px 10px}
+.table-long{position:absolute;left:10%;right:10%;bottom:18%;height:26px;background:#7A5238;border-radius:10px}
+.table-long::before{content:"";position:absolute;left:12%;top:-16px;width:34px;height:16px;background:#E2231A;border-radius:6px 6px 0 0}
+.table-long::after{content:"";position:absolute;right:16%;top:-16px;width:34px;height:16px;background:#F3ECE4;border-radius:6px 6px 0 0}
+.person{position:absolute;width:26px;height:46px;background:#C9A986;border-radius:14px 14px 6px 6px}
+.p1{left:18%;bottom:44%}.p2{left:38%;bottom:44%;background:#8A6A52}.p3{left:58%;bottom:44%;background:#E2231A}.p4{left:76%;bottom:44%;background:#6E6359}
+.board{position:absolute;left:12%;top:16%;width:38%;height:42%;background:#F3ECE4;border-radius:10px;border:8px solid #1B1B1B}
+.board::before{content:"";position:absolute;left:12%;top:20%;width:60%;height:8px;background:#B81810;border-radius:4px;box-shadow:0 20px 0 #C9A986,0 40px 0 #C9A986}
+.laptop{position:absolute;right:16%;bottom:20%;width:52px;height:34px;background:#2E241D;border-radius:6px;border:4px solid #1B1B1B}
+.meet-person{position:absolute;width:30px;height:50px;background:#8A6A52;border-radius:14px 14px 6px 6px}
+.mp1{left:20%;bottom:34%}.mp2{right:22%;bottom:34%;background:#6E4A34}
 
 /* ===== 消费者旅程五步 ===== */
 .journey{position:relative}
@@ -207,7 +228,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 
 <!-- ===== Hero ===== -->
 <header class="hero" id="top">
-  <div class="hero-bg"><img src="assets/hero.jpg" alt="新中式社区咖啡空间"></div>
+  <div class="hero-bg"><img src="assets/hero.jpg" alt="新中式社区咖啡空间" onerror="this.remove()"></div>
   <div class="wrap hero-inner">
     <span class="hero-tag">TALKLOOK ® · URBAN ESCAPE · 课题 01</span>
     <h1>把咖啡馆搬进社区，成为邻居们的<em class="accent">「社区客厅」</em></h1>
@@ -304,19 +325,25 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
         </div>
       </div>
       <div>
-        <img src="assets/alone.jpg" alt="独处休憩角落" style="border-radius:20px;height:380px;width:100%;object-fit:cover">
+        <div class="scene-visual" aria-label="独处休憩角落">
+          <div class="win"><div class="sun"></div><div class="chair"></div><div class="cup"></div></div>
+        </div>
       </div>
     </div>
     <div class="scene-grid">
       <div class="scene scene-main">
-        <img src="assets/gather.jpg" alt="多人交流长桌">
+        <div class="scene-visual" aria-label="多人交流长桌">
+          <div class="win"><div class="person p1"></div><div class="person p2"></div><div class="person p3"></div><div class="person p4"></div><div class="table-long"></div></div>
+        </div>
         <div class="scene-body">
           <h3>多人交流 · 邻里相聚</h3>
           <p>长桌与共享座位承载邻里闲谈、兴趣小组、亲子与手作活动，让咖啡空间成为社区关系发生的现场。</p>
         </div>
       </div>
       <div class="scene">
-        <img src="assets/meeting.jpg" alt="小型会议角落">
+        <div class="scene-visual" aria-label="小型会议角落">
+          <div class="win"><div class="board"></div><div class="laptop"></div><div class="meet-person mp1"></div><div class="meet-person mp2"></div></div>
+        </div>
         <div class="scene-body">
           <h3>小型会议 · 灵活讨论</h3>
           <p>可移动桌椅、白板与投屏构成半开放讨论区，满足周边自由职业者、小团队就近碰头与轻量办公需求。</p>
